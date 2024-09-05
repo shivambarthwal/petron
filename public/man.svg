@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Table -->
+  <rect x="40" y="120" width="120" height="20" fill="#8B4513" /> <!-- Brown table surface -->
+  <rect x="50" y="140" width="10" height="60" fill="#8B4513" /> <!-- Left table leg -->
+  <rect x="140" y="140" width="10" height="60" fill="#8B4513" /> <!-- Right table leg -->
+  
+  <!-- Man -->
+  <circle cx="100" cy="60" r="20" fill="#FFD700" /> <!-- Head - Gold color -->
+  <rect x="85" y="80" width="30" height="50" fill="#1E90FF" /> <!-- Body - Blue color -->
+  <rect x="70" y="80" width="15" height="50" fill="#1E90FF" transform="rotate(45, 77.5, 105)" /> <!-- Left Arm - Blue color -->
+  <rect x="115" y="80" width="15" height="50" fill="#1E90FF" transform="rotate(-45, 122.5, 105)" /> <!-- Right Arm - Blue color -->
+  <rect x="85" y="130" width="10" height="50" fill="#228B22" /> <!-- Left Leg - Green color -->
+  <rect x="105" y="130" width="10" height="50" fill="#228B22" /> <!-- Right Leg - Green color -->
+</svg>
