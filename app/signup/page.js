@@ -3,8 +3,16 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { FaGoogle, FaFacebookF, FaGithub } from 'react-icons/fa';
+import { useSession , signIn,signOut } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 const SignupForm = () => {
+  const {data :session} = useSession()
+  if(session){
+    const router = useRouter()
+    router.push('/dashboard')
+  }
+
   const formik = useFormik({
     initialValues: {
       username: '',
@@ -117,8 +125,9 @@ const SignupForm = () => {
           </button>
         </div>
         <div className="mt-4 flex justify-between">
-          <button
+          <button 
             className="w-full flex items-center justify-center bg-gray-800 text-white p-2 rounded-md hover:bg-gray-900 transition-colors duration-200"
+            onClick={() =>{signIn("Github")}}
           >
             <FaGithub className="mr-2" /> Sign up with GitHub
           </button>
